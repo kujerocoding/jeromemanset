@@ -6,7 +6,7 @@ import Logo from '../assets/images/logo.png'
 const NavBar = () => {
 
   return (
-    <nav className='py-4'>
+    <nav className='py-4 '>
       <ul className='w-11/12 mx-auto flex items-center justify-between'>
         <li><a href="" onClick={() => window.location.reload()}><img src={Logo} className='w-12 h-12'></img></a></li>
         <div className='w-2/12 flex justify-between bg-secondary py-2 px-4 rounded-lg'>

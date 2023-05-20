@@ -28,7 +28,7 @@ body{
 }
 
 .icon{
-    @apply w-8 h-8;
+    @apply w-8 h-8 fill-accent;
 }
 
 .btn-external{

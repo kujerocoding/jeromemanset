@@ -4,6 +4,7 @@ import Links from './Links'
 import PresenceChild from './PresenceChild'
 import { AnimatePresence, motion } from 'framer-motion'
 import Project from './Project'
+import MainBG from '../assets/images/bg-main.svg'
 
 const Main = ({filteredData, setData}) => {
 
@@ -58,8 +59,9 @@ const Main = ({filteredData, setData}) => {
   };
 
   return (
-      <div className='w-11/12 mx-auto h-5/6 md:flex gap-8 '>
-        <div className='relative w-full h-full bg-primary rounded-2xl'>
+      <div className='w-11/12 mx-auto h-5/6 md:flex gap-8 overflow-hidden'>
+        <div className='relative w-full h-full rounded-2xl overflow-hidden'>
+          <div className='absolute top-0 left-0 w-full'><img src={MainBG} alt="" /></div>
           <AnimatePresence>
             {isVisible && conditionalRender()}
           </AnimatePresence>
