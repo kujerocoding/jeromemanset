@@ -58,8 +58,8 @@ const Main = ({filteredData, setData}) => {
   };
 
   return (
-      <div className='w-11/12 mx-auto h-5/6 b-red md:flex'>
-        <div className='relative w-full h-full'>
+      <div className='w-11/12 mx-auto h-5/6 md:flex gap-8 '>
+        <div className='relative w-full h-full bg-primary rounded-2xl'>
           <AnimatePresence>
             {isVisible && conditionalRender()}
           </AnimatePresence>

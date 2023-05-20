@@ -28,14 +28,14 @@ const AboutMe = ({item}) => {
     
 
   return (
-    <motion.div variants={item} className='p-10 w-full h-full flex flex-col justify-evenly items-center'>
+    <motion.div variants={item} className='p-10 w-full h-full flex flex-col justify-evenly bg-primary text-text bg-transparent'>
         
-        <div className='w-20 h-20 b-red'>
-            <img className='w-full h-full object-contain' src="../src/assets/images/avatar.png" alt="profile picture"/> 
+        <div className='max-w-[15rem] max-h-[15rem] b-red rounded-full overflow-hidden'>
+            <img className='w-full h-full object-contain object-center' src="../src/assets/images/avatar.png" alt="profile picture"/> 
         </div>
         
         <motion.div
-            className='b-white flex flex-wrap text-3xl sm:text-4xl md:text-6xl'
+            className='font-archivo uppercase flex flex-wrap text-3xl sm:text-4xl md:text-6xl'
             initial="hidden"
             animate="visible"
             variants={parentLetters}
@@ -69,8 +69,8 @@ const AboutMe = ({item}) => {
                 ))}
         </motion.div>
 
-        <motion.div
-            className='b-black'
+        {/* <motion.div
+            className='font-roboto flex flex-wrap'
             initial="hidden"
             animate="visible"
             variants={parentWords}
@@ -100,7 +100,37 @@ const AboutMe = ({item}) => {
                  }
              }}>{word}</motion.p>
            ))}
+        </motion.div> */}
+
+        <motion.div
+        className='font-roboto flex flex-wrap w-4/5'
+        initial="hidden"
+        animate="visible"
+        variants={parentWords}>
+            <motion.p
+            variants={{
+                hidden:{
+                    opacity: 0,
+                    y: 50,
+                    transition: {
+                        type: "spring",
+                        damping: 12,
+                        stiffness: 50
+                    }
+                },
+                visible:{
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                        type: "spring",
+                        damping: 12,
+                        stiffness: 50,
+                    }
+                }
+            }}
+            >{aboutMeText}</motion.p>
         </motion.div>
+
     </motion.div>
   )
 }

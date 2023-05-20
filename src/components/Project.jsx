@@ -8,7 +8,7 @@ const Project = ({filteredData, item}) => {
 
 
   return (
-    <motion.div variants={item} className='p-10 w-full h-full flex flex-col justify-evenly items-center'>
+    <motion.div variants={item} className='p-10 w-full h-full text-text flex flex-col justify-evenly items-center bg-transparent'>
       <h2 className='text-3xl'>{title}</h2>
       <p className=''>{desc}</p>
       <div className='max-w-[40rem]'>
