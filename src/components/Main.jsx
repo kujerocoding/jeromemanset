@@ -59,9 +59,9 @@ const Main = ({filteredData, setData}) => {
   };
 
   return (
-      <div className='w-11/12 mx-auto h-5/6 md:flex gap-8 overflow-hidden'>
-        <div className='relative w-full h-full rounded-2xl overflow-hidden'>
-          <div className='absolute top-0 left-0 w-full'><img src={MainBG} alt="" /></div>
+      <div className=' h-5/6 md:flex gap-8 overflow-hidden'>
+        <div className='w-11/12 mx-auto relative'>
+          <div className='absolute top-0 left-0 w-full'>{/* <img src={MainBG} alt="" /> */}</div>
           <AnimatePresence>
             {isVisible && conditionalRender()}
           </AnimatePresence>

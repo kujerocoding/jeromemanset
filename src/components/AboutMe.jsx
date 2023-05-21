@@ -4,7 +4,7 @@ import React from 'react'
 
 const AboutMe = ({item}) => {
 
-    const headingText = "Hi, I'm Jerome Manset."
+    const headingText = "Hi, I'm Jerome Manset"
     const headingLetters = Array.from(headingText)
 
     const aboutMeText = "I am a self-taught front-end developer with a background in network engineering. I shifted my career to pursue my passion for web development, and I have been learning and building projects on my own. I am excited to continue growing my skills and contributing to the field. In my free time, I enjoy watching NBA games and playing online games."
@@ -28,7 +28,7 @@ const AboutMe = ({item}) => {
     
 
   return (
-    <motion.div variants={item} className='p-10 w-full h-full flex flex-col justify-evenly bg-primary text-text bg-transparent'>
+    <motion.div variants={item} className='p-10 w-full h-full flex flex-col items-center justify-evenly bg-primary text-text bg-transparent'>
         
         <div className='max-w-[15rem] max-h-[15rem] b-red rounded-full overflow-hidden'>
             <img className='w-full h-full object-contain object-center' src="../src/assets/images/avatar.png" alt="profile picture"/> 
@@ -103,7 +103,7 @@ const AboutMe = ({item}) => {
         </motion.div> */}
 
         <motion.div
-        className='font-roboto flex flex-wrap w-4/5'
+        className='font-roboto flex flex-wrap w-4/5 text-center'
         initial="hidden"
         animate="visible"
         variants={parentWords}>
