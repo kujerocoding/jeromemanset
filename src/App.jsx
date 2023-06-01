@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import NavBar from './components/Navbar'
 import Main from './components/Main'
-import Footer from './components/Footer'
 import ProjectData from './ProjectData';
 import Links from './components/Links';
 
