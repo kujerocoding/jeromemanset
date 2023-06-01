@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import React from 'react'
 
 
-const AboutMe = () => {
+const AboutMe = ({setSelectedProject}) => {
 
     const headingText = "Hi, I'm Jerome Manset"
     const headingLetters = Array.from(headingText)
@@ -48,13 +48,13 @@ const AboutMe = () => {
   return (
     <motion.div 
     variants={variants} 
-    className='bg-transparent flex flex-col text-primary text-center lg:text-left '>
+    className='p-4 lg:p-10 lg:pl-24 flex flex-col text-primary text-center lg:text-left'>
 
             <div className='text-4xl sm:text-4xl md:text-6xl font-bold'>
                 <h1>Hi, I'm Jerome</h1>
             </div>
             <div className='pb-10 text-4xl sm:text-4xl md:text-6xl'>
-                <h2 className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 '>web developer</h2>
+                <h2 className='bg-clip-text text-transparent bg-gradient-to-r from-primary to-pink-500 '>web developer</h2>
             </div>
             <div className='lg:w-3/4'>
                 <p>I love  building and maintaining websites. I use HTML, CSS, and JavaScript to create functional and visually appealing web pages. </p>
@@ -63,7 +63,7 @@ const AboutMe = () => {
                 </p>
             </div>
             <div className='mt-6 font-bold'>
-                <button>MORE ABOUT ME</button>
+                <button onClick={() => setSelectedProject('moreaboutme')} >MORE ABOUT ME</button>
             </div>
         
 {/*         <motion.div

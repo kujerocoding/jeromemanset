@@ -29,8 +29,15 @@ const App = () => {
       <div className='h-full'>
         <NavBar />
         <div className='lg:flex lg:h-5/6'>
-          <Main setData={setData} filteredData={filteredData} selectedProject={selectedProject}/>
-          <Links handleClick={handleClick} selectedProject={selectedProject} key="shit"/>
+          <Main 
+          setData={setData} 
+          filteredData={filteredData} 
+          selectedProject={selectedProject} 
+          setSelectedProject={setSelectedProject}/>
+          <Links 
+          handleClick={handleClick} 
+          selectedProject={selectedProject} 
+          key="shit"/>
         </div>
       </div>
   )

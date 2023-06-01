@@ -15,8 +15,8 @@ const NavBar = () => {
               <p className='text-primary'>Jerome Manset</p>
             </div>
           </a>
-          <div className=' bg-primary z-10 text-white w-1/3 md:w-1/5 h-full grid place-content-center'>
-            <button>CONTACT ME</button>
+          <div className='bg-border text-white w-1/3 md:w-1/5 h-full grid place-content-center hover-slide'>
+            <a href="mailto:jerome.manset22@gmail.com">CONTACT ME</a>
           </div>
           {/* <ul className='w-2/12 flex justify-between py-2 px-4 rounded-lg'>
               <li><a href="https://www.linkedin.com/in/jeromemanset22" target="_blank"><AiFillLinkedin className='icon' /></a></li>
