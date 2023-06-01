@@ -28,13 +28,26 @@ const AboutMe = ({item}) => {
     
 
   return (
-    <motion.div variants={item} className='p-10 w-full h-full flex flex-col items-center justify-evenly bg-primary text-text bg-transparent'>
+    <motion.div variants={item} className='bg-transparent flex flex-col text-primary text-center b-red'>
         
-        <div className='max-w-[15rem] max-h-[15rem] b-red rounded-full overflow-hidden'>
+        {/* <div className='max-w-[15rem] max-h-[15rem] b-red rounded-full overflow-hidden'>
             <img className='w-full h-full object-contain object-center' src="../src/assets/images/avatar.png" alt="profile picture"/> 
-        </div>
+        </div> */}
+
+            <div className='text-4xl sm:text-4xl md:text-6xl font-bold'>
+                <h1>Hi, I'm Jerome</h1>
+            </div>
+            <div className='pb-10 text-4xl sm:text-4xl md:text-6xl'>
+                <h2 className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 '>web developer</h2>
+            </div>
+            <div>
+                <p>I love  building and maintaining websites. I use HTML, CSS, and JavaScript to create functional and visually appealing web pages. </p>
+                <p className='pt-4'>
+                I spend my free time exploring new technologies and experimenting with creative website projects.
+                </p>
+            </div>
         
-        <motion.div
+{/*         <motion.div
             className='font-archivo uppercase flex flex-wrap text-3xl sm:text-4xl md:text-6xl'
             initial="hidden"
             animate="visible"
@@ -67,7 +80,7 @@ const AboutMe = ({item}) => {
                     }}
                     >{letter === " " ? "\u00A0" : letter}</motion.p>
                 ))}
-        </motion.div>
+        </motion.div> */}
 
         {/* <motion.div
             className='font-roboto flex flex-wrap'
@@ -102,7 +115,7 @@ const AboutMe = ({item}) => {
            ))}
         </motion.div> */}
 
-        <motion.div
+ {/*        <motion.div
         className='font-roboto flex flex-wrap w-4/5 text-center'
         initial="hidden"
         animate="visible"
@@ -129,7 +142,7 @@ const AboutMe = ({item}) => {
                 }
             }}
             >{aboutMeText}</motion.p>
-        </motion.div>
+        </motion.div> */}
 
     </motion.div>
   )

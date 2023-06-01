@@ -3,22 +3,35 @@ import NavBar from './components/Navbar'
 import Main from './components/Main'
 import Footer from './components/Footer'
 import ProjectData from './ProjectData';
+import Links from './components/Links';
 
 
 const App = () => {
 
   const [data, setData] = useState(ProjectData)
   const filteredData = data.filter(item => item.isOpen === true)
-  //console.log(filteredData);
+  const [selectedProject, setSelectedProject] = useState('aboutme')
 
-  
+  const handleClick = (e) => {
+    const { name } = e.target
+    setSelectedProject(() => {
+      if(selectedProject !== name) return name
+      return 'aboutme'
+    })
+    setData(prevData => {
+          return prevData.map(item => item.name === name ? {...item, isOpen: true} : {...item, isOpen: false})
+        }
+    )
+  }
 
   return (
     
-      <div className='flex flex-col h-screen'>
+      <div className='h-full'>
         <NavBar />
-        <Main setData={setData} filteredData={filteredData}/>
-        <Footer />
+        <div className='lg:flex'>
+          <Main setData={setData} filteredData={filteredData} selectedProject={selectedProject}/>
+          <Links handleClick={handleClick} selectedProject={selectedProject} key="shit"/>
+        </div>
       </div>
   )
 }

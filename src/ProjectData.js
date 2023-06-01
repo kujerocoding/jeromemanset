@@ -1,14 +1,5 @@
 export default  [
     {
-        id: 1,
-        name: 'aboutme',
-        title: 'welcome',
-        img: '',
-        isOpen: false,
-        desc: '',
-        
-    },
-    {
         id: 2,
         name: 'eliteballers',
         title: 'EliteBallers',
@@ -39,6 +30,17 @@ export default  [
         desc: "I re-created the frontend of Boreal Coffee's official web app because I got attracted to their beautiful UI. It was a great experience for me to build the entire frontend.",
         liveURL: 'https://animeclouds.netlify.app/',
         repoURL: 'https://github.com/kujerocoding/animeclouds'
+        
+    },
+    {
+        id: 5,
+        name: 'expenditurex',
+        title: 'ExpenditureX',
+        img: 'AnimeClouds.png',
+        isOpen: false,
+        desc: "I re-created the frontend of Boreal Coffee's official web app because I got attracted to their beautiful UI. It was a great experience for me to build the entire frontend.",
+        liveURL: 'https://expenditurex.onrender.com/',
+        repoURL: 'https://github.com/kujerocoding/expenditurex_frontend'
         
     },
 ]

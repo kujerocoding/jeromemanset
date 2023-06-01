@@ -7,14 +7,13 @@ export default {
   theme: {
     extend: {
       colors:{
-        'text': '#06230c',
-        'primary': '#6ce5c3',
-        'secondary': '#e5f6fa',
-        'accent': '#23a4c7',
-        'test': '#f2f4f3'
+        'primary': '#10446D',
+        'border': '#183D5A',
+        'accent': '#183D5A',
+        'bg': '#9ec5d6'
       },
       fontFamily:{
-        'archivo': 'Archivo Black, sans-serif',
+        'reem': 'Reem Kufi, sans-serif',
         'roboto': 'Roboto, sans-serif'
       }
     },
