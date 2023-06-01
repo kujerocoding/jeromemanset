@@ -11,7 +11,7 @@ const Links = ({handleClick, selectedProject}) => {
            <div className='my-5'>
             <h2 className='text-2xl mb-4 font-bold'>My Projects</h2>
             <ul className='relative p-5 flex flex-col gap-4'>
-                <div className='absolute top-0 left-0 w-1/2 h-2/5 border-t-2 border-border border-l-2'></div>
+                <div className='absolute top-0 left-0 w-1/2 h-2/5 border-t-[1px] border-border border-l-[1px]'></div>
                 {ProjectData.map(item => {
                   const {id, name, title} = item
                   return <li key={id}>

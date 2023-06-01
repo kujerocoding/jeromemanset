@@ -48,7 +48,7 @@ const AboutMe = ({setSelectedProject}) => {
   return (
     <motion.div 
     variants={variants} 
-    className='p-4 lg:p-10 lg:pl-24 flex flex-col text-primary text-center lg:text-left'>
+    className='p-4 lg:p-10 lg:pl-32 flex flex-col text-primary text-center lg:text-left'>
 
             <div className='text-4xl sm:text-4xl md:text-6xl font-bold'>
                 <h1>Hi, I'm Jerome</h1>

@@ -40,7 +40,7 @@ body{
 }
 
 .icon{
-    @apply m-2 w-8 h-8 fill-white hover:scale-105;
+    @apply w-8 h-8 fill-white hover:scale-105;
 }
 
 .btn-external{
