@@ -16,7 +16,7 @@ const PresenceChild = ({children}) => {
   return (
     
     <motion.div
-    /* className='absolute top-0 left-0 w-full h-full'  */
+    className='absolute w-full h-full flex items-center justify-center' 
     initial="hidden"
     animate="show"
     exit="exit"

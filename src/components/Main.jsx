@@ -10,27 +10,7 @@ const Main = ({filteredData, setData, selectedProject}) => {
 
   const [isVisible, setIsVisible] = useState(true)
   
-
-  
-
-  const conditionalRender = () => {
-    switch(selectedProject){
-      case 'aboutme':
-        return <PresenceChild key="aboutme"><AboutMe item={item} /></PresenceChild>
-      case 'eliteballers':
-        return <PresenceChild key="eliteballers"><Project item={item} filteredData={filteredData} /></PresenceChild>
-      case 'gamehub':
-        return <PresenceChild key="gamehub"><Project item={item} filteredData={filteredData} /></PresenceChild>
-      case 'animeclouds':
-        return <PresenceChild key="animeclouds"><Project item={item} filteredData={filteredData} /></PresenceChild>
-      case 'expenditurex':
-        return <PresenceChild key="expenditurex"><Project item={item} filteredData={filteredData} /></PresenceChild>
-      default:
-        console.log('switch default');
-    }
-  }
-
-  const item = {
+  const variants = {
     hidden: { opacity: 0, x: 200 },
     show: {
       opacity: 1,
@@ -50,15 +30,37 @@ const Main = ({filteredData, setData, selectedProject}) => {
     },
   };
 
+  const projectComponent = <Project variants={variants} filteredData={filteredData} />
+  
+
+  const conditionalRender = () => {
+    switch(selectedProject){
+      case 'aboutme':
+        return <PresenceChild key="aboutme"><AboutMe /></PresenceChild>
+      case 'eliteballers':
+        return <PresenceChild key="eliteballers">{projectComponent}</PresenceChild>
+      case 'gamehub':
+        return <PresenceChild key="gamehub">{projectComponent}</PresenceChild>
+      case 'animeclouds':
+        return <PresenceChild key="animeclouds">{projectComponent}</PresenceChild>
+      case 'expenditurex':
+        return <PresenceChild key="expenditurex">{projectComponent}</PresenceChild>
+      default:
+        console.log('switch default');
+    }
+  }
+
+  
+
   return (
-      <main className='bg-white basis-3/4'>
+      <main className='basis-3/4'>
         
-          <div className='relative w-full h-[500px]'>
-            <div className='absolute w-full h-full bg-green-500 flex items-center justify-center'>
+          <div className='relative w-full h-[500px] lg:h-full'>
+            
               <AnimatePresence>
                 {isVisible && conditionalRender()}
               </AnimatePresence>
-            </div>
+            
           </div>
        
     </main>

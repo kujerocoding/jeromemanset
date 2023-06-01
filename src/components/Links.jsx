@@ -7,7 +7,7 @@ const Links = ({handleClick, selectedProject}) => {
 
 
   return (
-      <div className='basis-1/4 grid place-content-center gap-8 text-primary b-blue'>
+      <div className='basis-1/4 grid place-content-center gap-8 text-primary'>
            <div className=''>
             <h2 className='text-2xl mb-4 font-bold'>My Projects</h2>
             <ul className='relative p-5 flex flex-col gap-4'>

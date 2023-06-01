@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import React from 'react'
 
 
-const AboutMe = ({item}) => {
+const AboutMe = () => {
 
     const headingText = "Hi, I'm Jerome Manset"
     const headingLetters = Array.from(headingText)
@@ -25,14 +25,30 @@ const AboutMe = ({item}) => {
         })
     }
 
-    
+    const variants = {
+        hidden: { opacity: 0, x: 200 },
+        show: {
+          opacity: 1,
+          x: 0,
+          transition: {
+            ease: 'easeInOut',
+            duration: 0.3,
+          },
+        },
+        exit: {
+          opacity: 0,
+          x: -200,
+          transition: {
+            ease: "easeInOut",
+            duration: 0.3,
+          },
+        },
+      };
 
   return (
-    <motion.div variants={item} className='bg-transparent flex flex-col text-primary text-center b-red'>
-        
-        {/* <div className='max-w-[15rem] max-h-[15rem] b-red rounded-full overflow-hidden'>
-            <img className='w-full h-full object-contain object-center' src="../src/assets/images/avatar.png" alt="profile picture"/> 
-        </div> */}
+    <motion.div 
+    variants={variants} 
+    className='bg-transparent flex flex-col text-primary text-center lg:text-left '>
 
             <div className='text-4xl sm:text-4xl md:text-6xl font-bold'>
                 <h1>Hi, I'm Jerome</h1>
@@ -40,11 +56,14 @@ const AboutMe = ({item}) => {
             <div className='pb-10 text-4xl sm:text-4xl md:text-6xl'>
                 <h2 className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 '>web developer</h2>
             </div>
-            <div>
+            <div className='lg:w-3/4'>
                 <p>I love  building and maintaining websites. I use HTML, CSS, and JavaScript to create functional and visually appealing web pages. </p>
-                <p className='pt-4'>
+                <p className='mt-4'>
                 I spend my free time exploring new technologies and experimenting with creative website projects.
                 </p>
+            </div>
+            <div className='mt-6 font-bold'>
+                <button>MORE ABOUT ME</button>
             </div>
         
 {/*         <motion.div
