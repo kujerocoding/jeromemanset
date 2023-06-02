@@ -54,7 +54,7 @@ const AboutMe = ({setSelectedProject}) => {
                 <h1>Hi, I'm Jerome</h1>
             </div>
             <div className='pb-10 text-4xl sm:text-4xl md:text-6xl'>
-                <h2 className='bg-clip-text text-transparent bg-gradient-to-r from-primary to-pink-500 '>web developer</h2>
+                <h2 className='bg-clip-text text-transparent bg-gradient-to-r from-colorFrom to-colorTo '>web developer</h2>
             </div>
             <div className='lg:w-3/4'>
                 <p>I love  building and maintaining websites. I use HTML, CSS, and JavaScript to create functional and visually appealing web pages. </p>

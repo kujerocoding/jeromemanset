@@ -6,7 +6,7 @@ import Logo from '../assets/images/logo.png'
 const NavBar = () => {
 
   return (
-    <nav className='pl-8 bg-transparent border-[1px] border-border w-full h-16'>
+    <nav className='pl-8 w-full h-16'>
       
         <div className='flex items-center justify-between w-full h-full'>
           <a className='' href="" onClick={() => window.location.reload()}>
@@ -15,7 +15,7 @@ const NavBar = () => {
               <p className='text-primary'>Jerome Manset</p>
             </div>
           </a>
-          <div className='bg-border text-white w-1/3 md:w-1/5 h-full grid place-content-center hover-slide'>
+          <div className='bg-border text-action w-1/3 md:w-1/6 h-full grid place-content-center hover-slide'>
             <a href="mailto:jerome.manset22@gmail.com">CONTACT ME</a>
           </div>
           {/* <ul className='w-2/12 flex justify-between py-2 px-4 rounded-lg'>

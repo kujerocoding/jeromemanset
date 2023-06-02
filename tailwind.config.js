@@ -10,7 +10,10 @@ export default {
         'primary': '#10446D',
         'border': '#183D5A',
         'accent': '#183D5A',
-        'bg': '#9ec5d6'
+        'bg': '#9ec5d6',
+        'colorTo': '#176099',
+        'colorFrom': '#106D68',
+        'action': '#E6E6E6'
       },
       fontFamily:{
         'reem': 'Reem Kufi, sans-serif',
