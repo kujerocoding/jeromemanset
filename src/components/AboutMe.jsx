@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import React from 'react'
+import {FaAngleRight} from 'react-icons/fa'
 
 
 const AboutMe = ({setSelectedProject}) => {
@@ -63,7 +64,12 @@ const AboutMe = ({setSelectedProject}) => {
                 </p>
             </div>
             <div className='mt-6 font-bold'>
-                <button onClick={() => setSelectedProject('moreaboutme')} >MORE ABOUT ME</button>
+                <button onClick={() => setSelectedProject('moreaboutme')}>
+                    <div className='flex gap-4 items-center justify-center hover:translate-x-5 transition duration-300 ease-in-out'>
+                        <p>MORE ABOUT ME</p>
+                        <FaAngleRight className='w-5 h-5' />
+                    </div>
+                </button>
             </div>
         
 {/*         <motion.div

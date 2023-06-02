@@ -1,12 +1,10 @@
 import React, {useState} from 'react'
 import AboutMe from './AboutMe'
-import Links from './Links'
 import PresenceChild from './PresenceChild'
 import { AnimatePresence, motion } from 'framer-motion'
 import Project from './Project'
-import MainBG from '../assets/images/bg-main.svg'
 import MoreAboutMe from './MoreAboutMe'
-import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
+import {AiFillLinkedin} from 'react-icons/ai'
 import {FaFileDownload, FaGithubSquare} from 'react-icons/fa'
 
 const Main = ({filteredData, setSelectedProject, selectedProject}) => {

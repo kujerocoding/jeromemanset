@@ -16,7 +16,7 @@ const Links = ({handleClick, selectedProject}) => {
                   const {id, name, title} = item
                   return <li key={id}>
                     <button name={name}
-                    className={`btn from-left  ${selectedProject === name ? 'shit' : ''}`}
+                    className={`btn from-left  ${selectedProject === name ? 'active' : ''}`}
                     onClick={handleClick}
                     >{title}</button>
                   </li>

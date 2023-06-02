@@ -1,6 +1,4 @@
 import React from 'react'
-import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
-import {MdEmail} from 'react-icons/md'
 import Logo from '../assets/images/logo.png'
 
 const NavBar = () => {
@@ -15,7 +13,7 @@ const NavBar = () => {
               <p className='text-primary'>Jerome Manset</p>
             </div>
           </a>
-          <div className='bg-border text-action w-1/3 md:w-1/6 h-full grid place-content-center hover-slide'>
+          <div className='bg-border text-action text-sm md:text-base w-1/3 md:w-1/6 h-full grid place-content-center hover-slide'>
             <a href="mailto:jerome.manset22@gmail.com">CONTACT ME</a>
           </div>
           {/* <ul className='w-2/12 flex justify-between py-2 px-4 rounded-lg'>
