@@ -70,7 +70,7 @@ const Main = ({filteredData, setSelectedProject, selectedProject}) => {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className='hidden lg:flex flex-col items-center gap-4 py-4 bg-border w-16 absolute top-1/2 left-0 translate-y-1/2'>
+            className='hidden lg:flex flex-col items-center gap-4 py-4 bg-transparent border-2 border-accent w-16 absolute bottom-0 left-0'>
               <a href="https://www.linkedin.com/in/jeromemanset22" target="_blank"><AiFillLinkedin className='icon' /></a>
               <a href="https://github.com/kujerocoding" target="_blank"><FaGithubSquare className='icon' /></a>
               <a href="https://github.com/kujerocoding" target="_blank"><FaFileDownload className='icon' /></a>

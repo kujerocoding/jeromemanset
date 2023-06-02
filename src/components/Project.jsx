@@ -23,9 +23,9 @@ const Project = ({filteredData, variants}) => {
   return (
     <motion.div 
      variants={variants}
-      className='p-4 lg:p-10 w-full h-full text-primary flex flex-col justify-evenly items-center bg-transparent text-center'>
+      className='p-4 lg:p-10 w-full h-full flex flex-col justify-evenly items-center bg-transparent text-center text-colorFont-400'>
 
-        <h2 className='text-xl font-bold'>{title}</h2>
+        <h2 className='text-xl font-bold text-colorFont'>{title}</h2>
         <p className='sm:w-3/4'>{desc}</p>
         <div className='w-72 h-8 overflow-x-hidden mt-4'>
           <motion.div 

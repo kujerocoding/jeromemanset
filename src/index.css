@@ -11,7 +11,7 @@ body{
     background-color: #121212;
     font-family: 'Reem Kufi', sans-serif;
     height: 100vh;
-    /* color: #11466f80; */
+    /* color: #498cbe */
     
 }
 
@@ -40,7 +40,7 @@ body{
 }
 
 .icon{
-    @apply w-8 h-8 fill-action hover:scale-105;
+    @apply w-8 h-8 fill-colorFont hover:scale-105;
 }
 
 .btn-external{
@@ -49,20 +49,20 @@ body{
 }
 
 .btn-shrink-border {
-    @apply text-accent bg-transparent hover:bg-transparent hover:shadow-none hover:text-white hover:before:opacity-0;
+    @apply text-colorFont-600 bg-transparent hover:bg-transparent hover:shadow-none hover:text-colorFont hover:before:opacity-0;
 }
 
 .btn-shrink-border::before {
     content: "";
     transition: opacity 0.3s, border 0.3s;
-    @apply absolute top-0 left-0 w-full h-full border-2 border-accent; 
+    @apply absolute top-0 left-0 w-full h-full border-2 border-colorFont-600; 
 }
 
 .btn-shrink-border::after {
     content: "";
     transform: scaleX(1.15) scaleY(1.5);
     transition: transform 0.3s, opacity 0.3s;
-    @apply absolute top-0 left-0 w-full h-full bg-transparent border-2 border-white opacity-0  hover:opacity-100 hover:scale-100;
+    @apply absolute top-0 left-0 w-full h-full bg-transparent border-2 border-colorFont opacity-0  hover:opacity-100 hover:scale-100;
 }
 
 /* PROJECT LINKS */
