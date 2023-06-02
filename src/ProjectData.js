@@ -6,6 +6,7 @@ export default  [
         img: 'EliteBallers.png',
         isOpen: false,
         desc: 'Elite Ballers is a multiservice logistics and transport company and I created their website from scratch using ReactJS, TailwindCSS and Typescript.',
+        technologies: ['ReactJs', 'TailwindCSS', 'NextJS', 'Framer-motion'],
         liveURL: 'https://elite-ballers.pages.dev/',
         repoURL: 'https://github.com/kujerocoding/elite-ballers'
         
@@ -17,6 +18,7 @@ export default  [
         img: 'gamehub.png',
         isOpen: false,
         desc: 'GameHub is an ecommerce store using ReactJS, NextJS, TailwindCSS, Sanity(Headless CMS).',
+        technologies: ['ReactJs', 'TailwindCSS', 'NextJS', 'Framer-motion'],
         liveURL: 'https://gamehub-drab.vercel.app/',
         repoURL: 'https://github.com/kujerocoding/gamehub'
         
@@ -28,6 +30,7 @@ export default  [
         img: 'AnimeClouds.png',
         isOpen: false,
         desc: "I re-created the frontend of Boreal Coffee's official web app because I got attracted to their beautiful UI. It was a great experience for me to build the entire frontend.",
+        technologies: ['ReactJs', 'TailwindCSS', 'NextJS', 'Framer-motion'],
         liveURL: 'https://animeclouds.netlify.app/',
         repoURL: 'https://github.com/kujerocoding/animeclouds'
         
@@ -39,6 +42,7 @@ export default  [
         img: 'AnimeClouds.png',
         isOpen: false,
         desc: "I re-created the frontend of Boreal Coffee's official web app because I got attracted to their beautiful UI. It was a great experience for me to build the entire frontend.",
+        technologies: ['ReactJs', 'TailwindCSS', 'NextJS', 'Framer-motion'],
         liveURL: 'https://expenditurex.onrender.com/',
         repoURL: 'https://github.com/kujerocoding/expenditurex_frontend'
         

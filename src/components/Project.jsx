@@ -2,9 +2,22 @@ import { motion } from 'framer-motion'
 import React from 'react'
 
 const Project = ({filteredData, variants}) => {
-  const {title, img, desc, liveURL, repoURL} = filteredData[0]
+  const {title, img, desc, technologies, liveURL, repoURL} = filteredData[0]
   console.log(filteredData[0])
 
+  const marqueeVariants = {
+    animate: {
+      x: [150, -250],
+      transition: {
+        x: {
+          repeat: Infinity,
+          repeatType: "loop",
+          duration: 7,
+          ease: "linear",
+        },
+      },
+    },
+  };
   
 
   return (
@@ -13,8 +26,19 @@ const Project = ({filteredData, variants}) => {
       className='p-4 lg:p-10 w-full h-full text-primary flex flex-col justify-evenly items-center bg-transparent text-center'>
 
         <h2 className='text-xl font-bold'>{title}</h2>
-        <p className='lg:w-3/4'>{desc}</p>
-        <div className='max-w-[40rem]'>
+        <p className='sm:w-3/4'>{desc}</p>
+        <div className='w-72 h-8 overflow-x-hidden mt-4'>
+          <motion.div 
+          className='whitespace-nowrap'
+          variants={marqueeVariants}
+          animate="animate"
+          >
+            {technologies.map((item, i) => (
+              <span key={i} className='mr-10 font-bold text-lg bg-clip-text text-transparent bg-gradient-to-r from-colorFrom to-colorTo'>{item}</span>
+            ))}
+          </motion.div>
+        </div>
+        <div className='max-w-[35rem]'>
           <img src={`../src/assets/images/${img}`} alt={`${title} picture`} ></img>
         </div>
         <div className='flex gap-4'>
