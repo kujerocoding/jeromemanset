@@ -7,12 +7,12 @@ const Project = ({filteredData, variants}) => {
 
   const marqueeVariants = {
     animate: {
-      x: [150, -250],
+      x: [150, -800],
       transition: {
         x: {
           repeat: Infinity,
           repeatType: "loop",
-          duration: 7,
+          duration: 10,
           ease: "linear",
         },
       },
@@ -23,7 +23,7 @@ const Project = ({filteredData, variants}) => {
   return (
     <motion.div 
      variants={variants}
-      className='p-4 lg:p-10 w-full h-full flex flex-col justify-evenly items-center bg-transparent text-center text-colorFont-400'>
+      className='p-4 w-full h-full flex flex-col items-center justify-between bg-transparent text-center text-colorFont-400'>
 
         <h2 className='text-xl font-bold text-colorFont'>{title}</h2>
         <p className='sm:w-3/4'>{desc}</p>
@@ -38,7 +38,7 @@ const Project = ({filteredData, variants}) => {
             ))}
           </motion.div>
         </div>
-        <div className='max-w-[35rem]'>
+        <div className='max-w-[30rem] lg:max-w-[35rem]'>
           <img src={`../src/assets/images/${img}`} alt={`${title} picture`} ></img>
         </div>
         <div className='flex gap-4'>
