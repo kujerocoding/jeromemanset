@@ -3,7 +3,7 @@ import React from 'react'
 import {FaAngleRight} from 'react-icons/fa'
 
 
-const AboutMe = ({setSelectedProject}) => {
+const AboutMe = ({setSelectedProject, itemVariants}) => {
 
     const headingText = "Hi, I'm Jerome Manset"
     const headingLetters = Array.from(headingText)
@@ -27,7 +27,7 @@ const AboutMe = ({setSelectedProject}) => {
     }
 
     const variants = {
-        hidden: { opacity: 0, x: 200 },
+        hidden: { opacity: 0, x: -200 },
         show: {
           opacity: 1,
           x: 0,
@@ -38,13 +38,15 @@ const AboutMe = ({setSelectedProject}) => {
         },
         exit: {
           opacity: 0,
-          x: -200,
+          x: 200,
           transition: {
             ease: "easeInOut",
             duration: 0.3,
           },
         },
       };
+
+
 
   return (
     <motion.div 
@@ -54,10 +56,12 @@ const AboutMe = ({setSelectedProject}) => {
             <div className='text-4xl sm:text-4xl md:text-6xl font-bold text-colorFont'>
                 <h1>Hi, I'm Jerome</h1>
             </div>
-            <div className='pb-10 text-4xl sm:text-4xl md:text-6xl'>
+            <motion.div 
+            variants={itemVariants}
+            className='pb-10 text-4xl sm:text-4xl md:text-6xl'>
                 <h2 className='bg-clip-text text-transparent bg-gradient-to-r from-colorFrom to-colorTo '>web developer</h2>
-            </div>
-            <div className='lg:w-3/4'>
+            </motion.div>
+            <div className='lg:w-3/4 sm:w-2/3 mx-auto lg:mx-0'>
                 <p>I love  building and maintaining websites. I use HTML, CSS, and JavaScript to create functional and visually appealing web pages. </p>
                 <p className='mt-4'>
                 I spend my free time exploring new technologies and experimenting with creative website projects.
@@ -65,7 +69,7 @@ const AboutMe = ({setSelectedProject}) => {
             </div>
             <div className='mt-6 font-bold'>
                 <button onClick={() => setSelectedProject('moreaboutme')}>
-                    <div className='flex gap-4 items-center justify-center hover:translate-x-5 transition duration-300 ease-in-out'>
+                    <div className='flex gap-3 items-center justify-center hover:translate-x-5 transition duration-300 ease-in-out'>
                         <p>MORE ABOUT ME</p>
                         <FaAngleRight className='w-5 h-5' />
                     </div>

@@ -25,7 +25,7 @@ const App = () => {
 
   return (
     
-      <div className='h-full'>
+      <div className='h-full max-w-7xl mx-auto'>
         <NavBar />
         <div className='lg:flex lg:h-5/6'>
           <Main 

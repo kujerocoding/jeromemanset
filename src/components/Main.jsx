@@ -31,15 +31,34 @@ const Main = ({filteredData, setSelectedProject, selectedProject}) => {
     },
   };
 
-  const projectComponent = <Project variants={variants} filteredData={filteredData} />
+  const itemVariants = {
+    hidden: { opacity: 0},
+    show: {
+        opacity: 1,
+        transition: {
+        ease: 'easeInOut',
+        duration: 0.4,
+        delay: 0.6
+        },
+     },
+    exit: {
+        opacity: 0,
+        transition: {
+            ease: "easeInOut",
+            duration: 0.4,
+        },
+    },
+}
+
+  const projectComponent = <Project variants={variants} itemVariants={itemVariants} filteredData={filteredData} />
   
 
   const conditionalRender = () => {
     switch(selectedProject){
       case 'aboutme':
-        return <PresenceChild key="aboutme"><AboutMe setSelectedProject={setSelectedProject} /></PresenceChild>
+        return <PresenceChild key="aboutme"><AboutMe itemVariants={itemVariants} setSelectedProject={setSelectedProject} /></PresenceChild>
       case 'moreaboutme':
-        return <PresenceChild key="moreaboutme"><MoreAboutMe setSelectedProject={setSelectedProject} /></PresenceChild>
+        return <PresenceChild key="moreaboutme"><MoreAboutMe itemVariants={itemVariants} setSelectedProject={setSelectedProject} /></PresenceChild>
       case 'eliteballers':
         return <PresenceChild key="eliteballers">{projectComponent}</PresenceChild>
       case 'gamehub':

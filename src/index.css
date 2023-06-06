@@ -94,7 +94,7 @@ body{
 }
 
 .active{
-    @apply scale-110;
+    @apply scale-110 text-colorFont;
 }
 
 .hover-slide {

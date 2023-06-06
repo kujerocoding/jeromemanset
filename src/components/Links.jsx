@@ -25,7 +25,7 @@ const Links = ({handleClick, selectedProject}) => {
            </div>
             <div className='absolute w-full -bottom-5 lg:bottom-0'>
               <div className='mb-5 lg:-mb-5 text-center md:text-right'>
-                <p className='md:mr-10'>Copyright © 2023 jeromemanset.com</p>
+                <p className='md:mr-10 text-sm'>Copyright © 2023 jeromemanset.com</p>
               </div>
             </div>
         </div>

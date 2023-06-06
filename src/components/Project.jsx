@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 
-const Project = ({filteredData, variants}) => {
+const Project = ({filteredData, variants, itemVariants}) => {
   const {title, img, desc, technologies, liveURL, repoURL} = filteredData[0]
   console.log(filteredData[0])
 
@@ -38,9 +38,11 @@ const Project = ({filteredData, variants}) => {
             ))}
           </motion.div>
         </div>
-        <div className='max-w-[30rem] lg:max-w-[35rem]'>
+        <motion.div 
+        variants={itemVariants}
+        className='max-w-[30rem] lg:max-w-[35rem]'>
           <img src={`../src/assets/images/${img}`} alt={`${title} picture`} ></img>
-        </div>
+        </motion.div>
         <div className='flex gap-4'>
           <a href={liveURL} target='_blank'><button className='btn-external btn-shrink-border'>View Website</button></a>
           <a href={repoURL} target='_blank'><button className='btn-external btn-shrink-border'>Source Code</button></a>

@@ -41,7 +41,7 @@ export default  [
         title: 'ExpenditureX',
         img: 'ExpenditureX.png',
         isOpen: false,
-        desc: "ExpenditureX is a website developed using the MERN stack, enabling users to manage their expenses efficiently. With its powerful features, users can track their expenses and visualize their financial data through a visually appealing dashboard powered by Chart.js.",
+        desc: "ExpenditureX is a website developed using the MERN stack, enabling users to manage their expenses efficiently. Users can track their expenses and visualize their financial data through a visually appealing dashboard powered by Chart.js.",
         technologies: ['React.js','MongoDB', 'Node.js', 'Express.js', 'Vite', 'TailwindCSS', 'Axios', 'Chart.js', 'react-datepicker'],
         liveURL: 'https://expenditurex.onrender.com/',
         repoURL: 'https://github.com/kujerocoding/expenditurex_frontend'

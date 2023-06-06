@@ -4,7 +4,7 @@ import Logo from '../assets/images/logo.png'
 const NavBar = () => {
 
   return (
-    <nav className='pl-8 w-full h-16'>
+    <nav className='w-full h-20'>
       
         <div className='flex items-center justify-between w-full h-full'>
           <a className='' href="" onClick={() => window.location.reload()}>
