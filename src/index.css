@@ -4,39 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 body{
-    /* background-color: #9ec5d6; */
     background-color: #121212;
     font-family: 'Reem Kufi', sans-serif;
     height: 100vh;
-    /* color: #498cbe */
-    
 }
 
 #root{
     height: 100%;
     width: 100%;
-}
-
-.b-red{
-    border: 2px solid red;
-}
-.b-blue{
-    border: 2px solid blue;
-}
-.b-orange{
-    border: 2px solid orange;
-}
-.b-green{
-    border: 2px solid green;
-}
-.b-white{
-    border: 2px solid white;
-}
-.b-black{
-    border: 2px solid black;
 }
 
 .icon{

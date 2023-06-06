@@ -51,7 +51,6 @@ const Main = ({filteredData, setSelectedProject, selectedProject}) => {
 }
 
   const projectComponent = <Project variants={variants} itemVariants={itemVariants} filteredData={filteredData} />
-  
 
   const conditionalRender = () => {
     switch(selectedProject){
@@ -68,24 +67,19 @@ const Main = ({filteredData, setSelectedProject, selectedProject}) => {
       case 'expenditurex':
         return <PresenceChild key="expenditurex">{projectComponent}</PresenceChild>
       default:
-        console.log('switch default');
+        return <PresenceChild key="aboutme"><AboutMe itemVariants={itemVariants} setSelectedProject={setSelectedProject} /></PresenceChild>
     }
   }
 
-  
-
   return (
-      <main className='relative basis-3/4'>
-        
-          <div className='relative w-full h-[500px] lg:h-full'>
-            
-              <AnimatePresence>
-                {isVisible && conditionalRender()}
-              </AnimatePresence>
-            
-          </div>
-          {selectedProject === 'aboutme' ? 
-            <motion.div
+      <div className='relative basis-3/4'>
+        <div className='relative w-full h-[500px] lg:h-full'>
+          <AnimatePresence>
+              {isVisible && conditionalRender()}
+          </AnimatePresence>
+        </div>
+        {selectedProject === 'aboutme' ? 
+          <motion.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -93,9 +87,9 @@ const Main = ({filteredData, setSelectedProject, selectedProject}) => {
               <a href="https://www.linkedin.com/in/jeromemanset22" target="_blank"><AiFillLinkedin className='icon' /></a>
               <a href="https://github.com/kujerocoding" target="_blank"><FaGithubSquare className='icon' /></a>
               <a href="https://github.com/kujerocoding" target="_blank"><FaFileDownload className='icon' /></a>
-            </motion.div>
-            : null}
-    </main>
+          </motion.div>
+          : null}
+    </div>
   )
 }
 

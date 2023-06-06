@@ -1,9 +1,8 @@
 import React, {useState} from 'react'
-import NavBar from './components/Navbar'
 import Main from './components/Main'
 import ProjectData from './ProjectData';
-import Links from './components/Links';
-
+import Header from './components/Header';
+import ProjectList from './components/ProjectList';
 
 const App = () => {
 
@@ -26,18 +25,18 @@ const App = () => {
   return (
     
       <div className='h-full max-w-7xl mx-auto'>
-        <NavBar />
-        <div className='lg:flex lg:h-5/6'>
+        <Header />
+        <main className='lg:flex lg:h-5/6'>
           <Main 
           setData={setData} 
           filteredData={filteredData} 
           selectedProject={selectedProject} 
           setSelectedProject={setSelectedProject}/>
-          <Links 
+          <ProjectList
           handleClick={handleClick} 
           selectedProject={selectedProject} 
           key="shit"/>
-        </div>
+        </main>
       </div>
   )
 }

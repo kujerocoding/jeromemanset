@@ -3,26 +3,15 @@ import React from 'react'
 
 const PresenceChild = ({children}) => {
 
-  const container = {
-    show: {
-      transition: {
-        staggerChildren: 0.35,
-      },
-    },
-  };
-
-
   return (
-    
     <motion.div
     className='absolute w-full h-full flex items-center justify-center' 
     initial="hidden"
     animate="show"
     exit="exit"
     >
-        {children}
+      {children}
     </motion.div>
-    
   )
 }
 
