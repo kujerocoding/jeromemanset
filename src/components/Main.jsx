@@ -23,7 +23,7 @@ const Main = ({filteredData, setSelectedProject, selectedProject}) => {
     },
     exit: {
       opacity: 0,
-      x: -200,
+      x: 200,
       transition: {
         ease: "easeInOut",
         duration: 0.3,

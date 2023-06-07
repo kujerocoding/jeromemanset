@@ -34,11 +34,13 @@ const AboutMe = ({setSelectedProject, itemVariants}) => {
         </div>
         <motion.div 
         variants={itemVariants}
-        className='pb-10 text-4xl sm:text-4xl md:text-6xl'>
-            <h2 className='bg-clip-text text-transparent bg-gradient-to-r from-colorFrom to-colorTo '>web developer</h2>
+        className='pb-10 text-2xl sm:text-3xl md:text-5xl font-bold'>
+            <h2 className='bg-clip-text text-transparent bg-gradient-to-r from-colorFrom to-colorTo'>
+              Front-End Developer
+            </h2>
         </motion.div>
-        <div className='lg:w-3/4 sm:w-2/3 mx-auto lg:mx-0'>
-            <p>I love  building and maintaining websites. I use HTML, CSS, and JavaScript to create functional and visually appealing web pages. </p>
+        <div className='lg:w-3/4 sm:w-2/3 mx-auto lg:mx-0 tracking-wide'>
+            <p>I build visually appealing and user-friendly interfaces. I use HTML, CSS, and JavaScript to create functional and optimal user experience.</p>
             <p className='mt-4'>
                 I spend my free time exploring new technologies and experimenting with creative website projects.
             </p>
