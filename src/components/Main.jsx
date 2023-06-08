@@ -4,8 +4,7 @@ import PresenceChild from './PresenceChild'
 import { AnimatePresence, motion } from 'framer-motion'
 import Project from './Project'
 import MoreAboutMe from './MoreAboutMe'
-import {AiFillLinkedin} from 'react-icons/ai'
-import {FaFileDownload, FaGithubSquare} from 'react-icons/fa'
+import {AiFillMail, AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
 
 const Main = ({filteredData, setSelectedProject, selectedProject}) => {
 
@@ -84,9 +83,9 @@ const Main = ({filteredData, setSelectedProject, selectedProject}) => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             className='hidden lg:flex flex-col items-center gap-4 py-4 bg-transparent border-2 border-accent w-16 absolute bottom-0 left-0'>
+              <a href="mailto:jerome.manset22@gmail.com"><AiFillMail className='icon' /></a>
               <a href="https://www.linkedin.com/in/jeromemanset22" target="_blank"><AiFillLinkedin className='icon' /></a>
-              <a href="https://github.com/kujerocoding" target="_blank"><FaGithubSquare className='icon' /></a>
-              <a href="https://github.com/kujerocoding" target="_blank"><FaFileDownload className='icon' /></a>
+              <a href="https://github.com/kujerocoding" target="_blank"><AiFillGithub className='icon' /></a>
           </motion.div>
           : null}
     </div>

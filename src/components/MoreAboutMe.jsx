@@ -1,5 +1,5 @@
 import React from 'react'
-import ProfilePic from '../assets/images/jerome.jpg'
+import ProfilePic from '../assets/jerome.jpg'
 import { FaAngleLeft } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
@@ -29,11 +29,11 @@ const MoreAboutMe = ({setSelectedProject, itemVariants}) => {
   return (
     <motion.div 
     variants={variants}
-    className='p-4 lg:p-10 flex flex-col text-colorFont-400 tracking-wide'>
+    className='mt-20 sm:mt-0 p-4 lg:p-10 flex flex-col text-colorFont-400 tracking-wide'>
       <div className='flex gap-4 md:gap-10 sm:items-center'>
         <motion.div 
         variants={itemVariants}
-        className='basis-40 sm:basis-32 lg:basis-36 hover:outline-2 outline-double outline-primary '>
+        className='basis-48 sm:basis-32 lg:basis-36 hover:outline-2 outline-double outline-primary '>
           <img src={ProfilePic} alt="profile pic" className='w-full h-full' />
         </motion.div>
         <div className='basis-96 sm:basis-4/6'>

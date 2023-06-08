@@ -1,5 +1,6 @@
 import React from 'react'
-import Logo from '../assets/images/logo.png'
+import Logo from '../assets/logo.png'
+import Resume from '../assets/Jerome Manset - Resume.pdf'
 
 const Header = () => {
 
@@ -12,7 +13,7 @@ const Header = () => {
           </div>
         </a>
         <div className='bg-accent text-action text-sm md:text-base w-1/3 md:w-1/6 h-full grid place-content-center hover-slide'>
-          <a href="mailto:jerome.manset22@gmail.com">CONTACT ME</a>
+          <a href={Resume} download >RESUME</a>
         </div>
       </div>
     </header>

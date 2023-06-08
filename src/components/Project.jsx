@@ -39,7 +39,7 @@ const Project = ({filteredData, variants, itemVariants}) => {
         <motion.div 
         variants={itemVariants}
         className='max-w-[30rem] lg:max-w-[35rem]'>
-          <img src={`../src/assets/images/${img}`} alt={`${title} picture`}></img>
+          <img src={`/assets/${img}`} alt={`${title} picture`}></img>
         </motion.div>
         <div className='flex gap-4'>
           <a href={liveURL} target='_blank'>

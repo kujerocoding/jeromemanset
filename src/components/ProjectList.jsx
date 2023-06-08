@@ -4,7 +4,7 @@ import ProjectData from '../ProjectData'
 const ProjectList = ({handleClick, selectedProject}) => {
 
   return (
-    <div className='relative basis-1/3 grid place-content-center gap-8 pb-10 lg:pb-0 text-colorFont-400'>
+    <div className='mt-20 sm:mt-20 relative basis-1/3 grid place-content-center gap-8 pb-10 lg:pb-0 text-colorFont-400'>
       <div className='my-5'>
           <h2 className='text-2xl mb-8 font-bold text-colorFont'>My Projects</h2>
           <ul className='relative p-8 flex flex-col gap-4'>
